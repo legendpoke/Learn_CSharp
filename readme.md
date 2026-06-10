@@ -1,101 +1,201 @@
 # C# Course
 
-This repository contains small C# practice programs. Each `.cs` file focuses on one concept, such as variables, loops, arrays, classes, collections, interfaces, and basic object-oriented programming.
+A beginner-friendly collection of C# programs designed to help learners understand the fundamentals of C# programming and Object-Oriented Programming (OOP).
 
-## Project Files
+This repository contains small, focused examples where each file demonstrates a specific concept. The goal is to build a strong foundation in C# by learning one topic at a time through practical code examples.
 
-| File | What it is about |
-| --- | --- |
-| `helloworld.cs` | First C# program that prints `hello world` to the console. |
-| `variables.cs` | Shows how to declare variables, assign values, and print them. |
-| `data_types.cs` | Demonstrates common C# data types like `int`, `long`, `float`, `double`, `decimal`, `bool`, `char`, `byte`, `string`, `object`, arrays, and `var`. |
-| `TypeCasting.cs` | Placeholder file for type casting practice. The class exists, but no example code has been added yet. |
-| `input_user.cs` | Shows how to take user input with `Console.ReadLine()`, convert input to an integer, and validate input using `int.TryParse()`. |
-| `conditional_statements.cs` | Uses `if`, `else if`, and `else` to print a grade based on marks. |
-| `Ternary_operator.cs` | Demonstrates the ternary operator by checking whether a number is even or odd. |
-| `Switch.cs` | Demonstrates a `switch` statement using different player states. |
-| `Loops.cs` | Covers `for`, `while`, `do-while`, `foreach`, `break`, and `continue`. |
-| `NestedLoops.cs` | Demonstrates nested loops by printing values from an inner and outer loop. |
-| `array.cs` | Shows array basics, including accessing elements, array length, rank, reversing, and sorting. |
-| `MultiDimensionalArray.cs` | Demonstrates a three-dimensional array and nested loops for accessing array positions. |
-| `list.cs` | Demonstrates `List<T>` using a `Teacher` class, including adding, removing, inserting, looping, and finding an index. |
-| `dictinory.cs` | Demonstrates `Dictionary<TKey, TValue>`, including adding values, updating values, checking keys/values, using `TryGetValue()`, and storing objects as values. |
-| `Other_Collections.cs` | Shows other collection types: `Queue`, `Stack`, `HashSet`, `LinkedList`, and `SortedList`. |
-| `Functions.cs` | Demonstrates creating a method that returns a value, using an `add()` function. |
-| `Void.cs` | Demonstrates `void` methods by calling a method that prints a message. |
-| `Params.cs` | Demonstrates the `params` keyword for passing a variable number of arguments to a method. |
-| `Optional_Parameters.cs` | Shows optional parameters, default values, and named arguments. |
-| `Out.cs` | Demonstrates the `out` keyword to return multiple values from a method. |
-| `Recursion.cs` | Demonstrates recursion by calculating the factorial of a number. |
-| `class_objects.cs` | Demonstrates creating a class, making an object, setting fields, and calling a method. |
-| `Constructor.cs` | Demonstrates constructors and setting object values when creating an object. |
-| `Properties.cs` | Demonstrates C# properties with `get` and `set` accessors. |
-| `Static.cs` | Demonstrates static methods and static fields that can be used without creating an object. |
-| `accrss_modiefiers.cs` | Demonstrates access modifiers using a private `score` field and public methods to update and display it. |
-| `oops.cs` | Demonstrates object-oriented programming concepts like inheritance, method overriding, and polymorphism. |
-| `Interfaces.cs` | Demonstrates interfaces, multiple interface implementation, default interface methods, and explicit interface implementation. |
-| `Struct.cs` | Demonstrates `struct` value-type behavior by copying one struct into another. |
-| `Enum.cs` | Demonstrates enums and converting an enum value to its integer value. |
-| `Delegate.cs` | Demonstrates delegates by storing and calling methods through a delegate variable. |
-| `Value_vs_Reference.cs` | Explains value types vs reference types, object references, method parameter behavior, and the `object` keyword. |
-| `Number_guess.cs` | A number guessing game where multiple players guess numbers, scores are tracked, and the first player to reach 10 points wins. |
+Whether you're a student, self-learner, or aspiring game developer using Unity, these examples can help you understand how core C# concepts work in real-world applications.
 
-## Keywords Used In This Project
+---
 
-This section lists the main C# keywords used in the `.cs` files and explains their function and common use cases.
+# Author
 
-| Keyword | Function | Use case |
-| --- | --- | --- |
-| `using` | Imports namespaces so their classes and methods can be used more easily. | Used for `System`, `System.Collections.Generic`, and other libraries. |
-| `namespace` | Groups related classes and avoids naming conflicts. | Used to place course files inside `C__Course`. |
-| `class` | Defines a reference type that can contain fields, methods, constructors, and properties. | Used for examples like `Student`, `Cars`, `Calculator`, `Animal`, and `Guess`. |
-| `struct` | Defines a value type. | Used in `Struct.cs` to show that copying a struct creates a separate value. |
-| `interface` | Defines a contract of methods that classes can implement. | Used in `Interfaces.cs` for `IFly`, `ISwim`, and `ITest`. |
-| `enum` | Defines a named set of constant values. | Used in `Enum.cs` for difficulty levels like `Easy`, `Medium`, and `Hard`. |
-| `delegate` | Stores a reference to a method with a matching signature. | Used in `Delegate.cs` to call `add()` and `sub()` through a delegate. |
-| `public` | Makes a member accessible from outside the class. | Used for methods and fields that other code should access. |
-| `private` | Restricts access to inside the same class. | Used in `Number_guess.cs` and `accrss_modiefiers.cs` to protect score fields. |
-| `static` | Belongs to the class itself instead of an object. | Used for methods like `Demo.Show()` and shared fields like `Counter.count`. |
-| `void` | Means a method does not return a value. | Used for methods that only print output or perform an action. |
-| `return` | Sends a value back from a method and exits that method. | Used in `Functions.cs`, `Params.cs`, and `Recursion.cs`. |
-| `new` | Creates a new object, array, or collection. | Used to create objects like `new Cars(...)`, `new Guess()`, and `new Dictionary<...>()`. |
-| `virtual` | Allows a base class method to be overridden by a derived class. | Used in `oops.cs` for `Animal.sound()`. |
-| `override` | Replaces a virtual method from a base class. | Used in `Dog.sound()` to provide dog-specific behavior. |
-| `get` | Defines how a property value is read. | Used in `Properties.cs` for `Mmarks` and `Name`. |
-| `set` | Defines how a property value is assigned. | Used in `Properties.cs` to control property assignment. |
-| `int` | Stores whole numbers. | Used for marks, scores, ages, array values, loop counters, and calculations. |
-| `long` | Stores large whole numbers. | Used in `data_types.cs` for a bigger integer value. |
-| `float` | Stores decimal numbers with single precision. | Used in `data_types.cs` and `Number_guess.cs` for average/result calculations. |
-| `double` | Stores decimal numbers with double precision. | Used in `data_types.cs` and `Params.cs`. |
-| `decimal` | Stores precise decimal numbers, often useful for money. | Used in `data_types.cs`. |
-| `bool` | Stores `true` or `false`. | Used in `data_types.cs` for simple yes/no state. |
-| `char` | Stores a single character. | Used in `data_types.cs`. |
-| `byte` | Stores a small whole number from 0 to 255. | Used in `data_types.cs`. |
-| `string` | Stores text. | Used for names, messages, input, and printed output. |
-| `object` | Base type that can store any type of value. | Used in `data_types.cs`, `Params.cs`, and `Value_vs_Reference.cs`. |
-| `var` | Lets the compiler decide the variable type from the assigned value. | Used when the assigned value clearly shows the type. |
-| `true` | Boolean value meaning yes/on/correct. | Used for infinite loops and boolean examples. |
-| `if` | Runs code only when a condition is true. | Used for grading, input validation, score checking, and logic decisions. |
-| `else` | Runs code when the `if` condition is false. | Used for fallback cases like invalid input or failed conditions. |
-| `switch` | Selects one block of code from multiple cases. | Used in `Switch.cs` for player state handling. |
-| `case` | Defines one possible match inside a `switch`. | Used for player states like idle, running, and jumping. |
-| `default` | Runs when no `switch` case matches. | Used to handle an unknown player state. |
-| `for` | Repeats code a fixed number of times. | Used for array indexing and counter-based loops. |
-| `foreach` | Loops through every item in a collection or array. | Used for arrays, lists, dictionaries, queues, stacks, and other collections. |
-| `in` | Used with `foreach` to specify the collection being looped through. | Example: `foreach (var item in students)`. |
-| `while` | Repeats code while a condition remains true. | Used in loops and in the number guessing game. |
-| `do` | Starts a `do-while` loop that runs at least once. | Used in `Loops.cs` to demonstrate `do-while`. |
-| `break` | Stops a loop or exits a `switch`. | Used when a winner is found or when a `switch` case ends. |
-| `continue` | Skips the rest of the current loop cycle and moves to the next one. | Used when invalid input is entered or when skipping a loop value. |
-| `out` | Allows a method to return values through parameters. | Used in `Out.cs` and with `int.TryParse()`. |
-| `params` | Allows a method to accept a variable number of arguments. | Used in `Params.cs` for adding numbers, printing names, and printing mixed items. |
+**Legendpoke**
 
-## How To Run
+Passionate about programming, game development, and helping beginners learn software development through practical examples.
 
-This is a .NET console project. You can run it with:
+---
+
+# What You'll Learn
+
+This repository covers:
+
+- Variables and Data Types
+- User Input Handling
+- Conditional Statements
+- Loops and Nested Loops
+- Arrays and Collections
+- Functions and Parameters
+- Object-Oriented Programming (OOP)
+- Constructors and Properties
+- Access Modifiers
+- Interfaces
+- Delegates
+- Structs and Enums
+- Value Types vs Reference Types
+- Basic Console Game Development
+
+By completing these examples, you'll develop a solid understanding of C# fundamentals that can later be applied to:
+
+- Unity Game Development
+- Desktop Applications
+- Web Development with ASP.NET
+- Backend Development
+- Software Engineering Projects
+
+---
+
+# Project Structure
+
+Each file focuses on a specific programming concept.
+
+| File | Concept | Real-World Use Case |
+|--------|--------|--------|
+| `helloworld.cs` | Hello World Program | Understanding program structure and console output. |
+| `variables.cs` | Variables | Storing player names, scores, health values, etc. |
+| `data_types.cs` | Data Types | Managing different kinds of data such as numbers, text, and boolean states. |
+| `TypeCasting.cs` | Type Conversion | Converting user input or data received from external systems. |
+| `input_user.cs` | User Input | Reading player names, menu options, or configuration settings. |
+| `conditional_statements.cs` | If-Else Statements | Decision-making systems such as grading, game logic, or validations. |
+| `Ternary_operator.cs` | Ternary Operator | Writing shorter conditional expressions. |
+| `Switch.cs` | Switch Statement | Handling game states, menus, or command selections. |
+| `Loops.cs` | Looping | Repeating actions such as game updates or data processing. |
+| `NestedLoops.cs` | Nested Loops | Working with grids, matrices, and board games. |
+| `array.cs` | Arrays | Storing collections of related values like scores or inventory items. |
+| `MultiDimensionalArray.cs` | 3D Arrays | Managing coordinates, maps, and spatial data. |
+| `list.cs` | Lists | Dynamic collections where size changes during runtime. |
+| `dictinory.cs` | Dictionaries | Fast key-value lookups such as usernames and profiles. |
+| `Other_Collections.cs` | Queue, Stack, HashSet, LinkedList, SortedList | Specialized collections for different programming problems. |
+| `Functions.cs` | Methods with Return Values | Reusable logic that returns results. |
+| `Void.cs` | Void Methods | Performing actions without returning values. |
+| `Params.cs` | Params Keyword | Accepting a variable number of arguments. |
+| `Optional_Parameters.cs` | Optional Parameters | Making methods easier and more flexible to call. |
+| `Out.cs` | Out Parameters | Returning multiple values from a method. |
+| `Recursion.cs` | Recursive Methods | Solving problems that repeat themselves, such as factorial calculations. |
+| `class_objects.cs` | Classes and Objects | Building custom data types. |
+| `Constructor.cs` | Constructors | Initializing objects with default values. |
+| `Properties.cs` | Properties | Controlled access to class data. |
+| `Static.cs` | Static Members | Shared methods and data across all objects. |
+| `accrss_modiefiers.cs` | Access Modifiers | Protecting data and controlling accessibility. |
+| `oops.cs` | Inheritance and Polymorphism | Creating reusable and extensible code structures. |
+| `Interfaces.cs` | Interfaces | Defining contracts between classes. |
+| `Struct.cs` | Structs | Lightweight value-type objects. |
+| `Enum.cs` | Enumerations | Creating readable named constants. |
+| `Delegate.cs` | Delegates | Storing and executing methods dynamically. |
+| `Value_vs_Reference.cs` | Memory Management | Understanding how data behaves when copied or passed around. |
+| `Number_guess.cs` | Console Game Project | Combines multiple concepts into a complete mini-project. |
+
+---
+
+# Number Guess Game
+
+The Number Guess Game is the largest practice project in this repository. It is a four-player console game where three computer-controlled players compete against one human player. Each round, all four players submit guesses, a target result is calculated from those guesses, and anyone whose guess falls within a range of the result earns a point. The first player to reach 10 points wins.
+
+## How It Works
+
+**Round Setup**
+
+At the start of each round, three random numbers between 0 and 100 are generated — one for each computer player. The human player is then prompted to enter their own guess in the same range.
+
+**Result Calculation**
+
+All four guesses are added together and divided by 4 to find the average. That average is then multiplied by 0.8 to produce the round's target result, representing 80% of the average guess.
+
+**Scoring**
+
+Each player's guess is checked against the result. If a guess falls within plus or minus 2 of the result, that player earns one point. All four players are checked independently in the same round, so multiple players can score in a single round.
+
+**Winning Condition**
+
+Score tracking is maintained individually for all four players. The moment any player's score reaches 10, that player is declared the winner and the game ends.
+
+**Input Validation**
+
+If the human player enters something that is not a valid number, the round is skipped and the player is prompted again. This prevents the program from crashing on bad input.
+
+## Concepts Practiced
+
+- Classes and Objects
+- Instance variables for score tracking
+- Random number generation
+- While loop for the game cycle
+- Input validation using `int.TryParse`
+- Conditional statements for scoring logic
+- Loop control with `break` to end the game
+- Float arithmetic for average calculation
+- Type conversion with `Convert.ToInt32`
+
+## Game Logic Summary
+
+```
+Each round:
+  player_one, player_two, player_three = random numbers (0-100)
+  player = human input
+
+  average = (player_one + player_two + player_three + player) / 4
+  result  = average * 0.8
+
+  For each player:
+    if guess is within result ± 2 → score + 1
+    if score reaches 10          → that player wins, game ends
+```
+
+---
+
+# Important C# Concepts Covered
+
+## Object-Oriented Programming (OOP)
+
+The repository introduces the four core OOP principles:
+
+### Encapsulation
+Protecting data using access modifiers and properties.
+
+### Inheritance
+Allowing one class to inherit functionality from another.
+
+### Polymorphism
+Allowing methods to behave differently depending on the object.
+
+### Abstraction
+Hiding implementation details and exposing only required functionality.
+
+---
+
+# How To Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repository-name.git
+```
+
+Move into the project folder:
+
+```bash
+cd your-repository-name
+```
+
+Run the project:
 
 ```bash
 dotnet run
 ```
 
-Many files contain practice methods instead of a normal `Main` method, so you may need to call the method you want to test from your program entry point.
+Some files contain practice methods instead of a standard `Main()` method.
+
+To test a specific concept:
+
+1. Open the desired `.cs` file.
+2. Call its method from `Main()`.
+3. Run the project again.
+
+---
+
+# Who Is This Repository For?
+
+- Beginners learning C#
+- B.Tech Students
+- Unity Game Developers
+- Aspiring Software Engineers
+- Anyone preparing for Object-Oriented Programming interviews
